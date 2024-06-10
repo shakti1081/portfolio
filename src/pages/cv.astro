@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV9FRZ6JN"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MGV9FRZ6JN');
+</script>
+
+</head>
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Hey, I am Shakti Singh a studious person who has always been at the top academically, continually achieving outstanding results. My burning desire for learning and quest to do everything excellently has constituted my academic journey of being an honest and high-achieving student in all of my undertakings.
+
+Apart from academics, I have actively taken part in various clubs as well as managed them which have greatly contributed to the development of my leadership and management competencies. The most significant role that I have ever played is that of being the president of Cognitive fitness club, where I guided it to new levels through innovative approaches and team work. This experience has not only developed me into a better leader but also reminded me about the need for inclusive and energetic communities.
+
+Dance and chess are also areas of great interest outside academia as far as they concern me. Besides providing creative space, these activities build up on strategic abilities while refining precision. Dance permits artistic expression with physical fitness implications while chess hones mental acuity and enhances problem-solving abilities.
+
+Through blending intellectual prowess, leadership roles, hobbies etc., I am engaged in a perpetual quest for self-improvement at all levels both intellectually and personally. These qualities will be beneficial in future opportunities and help me make important contributions to society.
+
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Higher Secondary Education"
+      subtitle="2019 to 2021 at UP Kirana Seva Samiti Balika Vidayalaya, Kanpur, India"
+    />
+    <TimeLineElement
+      title="B.Tech Computer Science Specialization in Cyber Security and Digital Forensics"
+      subtitle="2021 to 2025 at Vellore Institute of Technology, India"
+    />
+  </div>
+
+
+<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Solutions Architect intern"
+      subtitle="From Aug 2023 to Nov 2023"
+    >
+    Honed my understanding of computers, network, development and cloud technology, incorporated this into practice
+    </TimeLineElement>
+</div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> AWS Cloud Essential </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> AWS Cloud practitioner </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> AWS Cloud Architecting </a>
+    </li>
+     <li>
+      <a href="#" target="_blank"> AWS Academy Cloud Foundations </a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Accomplishments</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+
+    <li>
+      <a href="#" target="_blank"> Global rank ~ 5L on Leetcode  </a>
+    </li>
+
+    <li>
+      <a href="#" target="_blank"> 5 star coder on Hackerrank in Python and Java </a>
+    </li>
+
+    <li>
+      <a href="#" target="_blank"> Developed recommendation ML model </a>
+    </li>
+
+    <li>
+      <a href="#" target="_blank"> Data analysis on War analysis </a>
+    </li>
+
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Security testing</li>
+    <li>Problem solving</li>
+    <li>Java development</li>
+    <li>Scripting</li>
+    <li>Cloud management</li>
+    <li>Data analysis</li>
+    <li>Algorithms</li>
+  </ul>
+</BaseLayout>
